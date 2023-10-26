@@ -1,0 +1,10 @@
+-> Creating music website like Spotify
+-> Ticket booking app
+-> Online Voting app
+-> Personal Portfolio
+-> Tic Tac Toe
+-> My project - Social Networking Site
+
+
+MOOCs Course - 2 to be done, and both summed upto minimum of 10hrs
+LinkedIN - One of CSS, and other of JS  
