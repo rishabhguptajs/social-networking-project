@@ -5,6 +5,8 @@
 }
 nav {
     display: flex;
+    position: sticky;
+    top: 0;
     flex-direction: row;
     justify-content: space-between;
     padding: 5px;
@@ -87,32 +89,34 @@ hr{
 }
 .post-info{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
     /* align-items: center; */
     color: white;
     margin: 1.5em 0em;
     padding: 3em;
     width: 65em;
     border-radius: 50px;
-    height: 40em;
+    height: 65em;
     background-color: rgba(220, 220, 255, 0.259);
 }
-.post1{
+.post1, .post2{
     padding: 20px;
     border-radius: 20px;
-    width: 60em;
-    background-color: rgba(111, 159, 255, 0.586);
-    height: 20em;
+    width: 62em;
+    background-color: rgb(185, 208, 255);
+    height: 29em;
     /* border: 2px solid rgb(111, 111, 255); */
 }
-.post1 .details{
+.post1 .details, .post2 .details{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     background-color: transparent;
     /* margin: 0.5em 0em; */
 }
-.post1 .details .user{
+.post1 .details .user, .post2 .details .user{
     display: flex;
     flex-direction: row;
     /* color: rgb(111, 111, 255); */
@@ -121,7 +125,7 @@ hr{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0.5em 0.5em;
 }
-.post1 .details .user .user-detail{
+.post1 .details .user .user-detail, .post2 .details .user .user-detail{
     background-color: transparent;
     color: rgb(23, 23, 23);
     padding: 1px 15px;
@@ -130,9 +134,35 @@ hr{
     cursor: default;
     font-family: 'Ubuntu', sans-serif;
 }
+.post1 .details .threedots, .post2 .details .threedots{
+    background-color: transparent;
+    color: rgb(23, 23, 23);
+    border-radius: 50%;
+    border: 1px solid rgb(118, 118, 118);
+    padding: 10px 10px;
+    margin: 0.5em 0.5em;
+    cursor: pointer;
+}
 .user-dp{
     width: 3em;
     height: 3em;
     border-radius: 50%;
     /* border: 2px solid rgb(111, 111, 255); */
+}
+.caption{
+    background-color: transparent;
+    margin: 0.5em 1.8em;
+    color: rgb(47, 47, 47);
+    margin-bottom: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.post-images{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+}
+.post-images img{
+    /* width: 20em; */
+    /* height: 20em; */
+    border-radius: 20px;
 }
